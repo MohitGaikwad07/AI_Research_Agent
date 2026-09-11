@@ -22,7 +22,7 @@ from agents import (
 # ============================================================
 st.set_page_config(
     page_title="Multi-Agent Research System",
-    page_icon="🧠",
+    # page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -155,10 +155,10 @@ with st.sidebar:
     st.caption("Lower this if you hit a 413 'Request too large' / TPM rate-limit error from your model provider.")
     max_chars = st.slider(
         "Max characters sent per LLM call",
-        min_value=1500,
-        max_value=12000,
-        value=5000,
-        step=500,
+        min_value=1200,
+        max_value=2000,
+        value=3000,
+        step=300,
         disabled=st.session_state.running,
     )
 

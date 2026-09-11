@@ -1,3 +1,4 @@
 .env
 .venv
 notes.tldr
+requirements.txt
